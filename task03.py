@@ -1,7 +1,12 @@
 import string
 
 
-def to_abc(st: str):
+def to_abc(st: str) -> str:
+    """
+    Функция удаляет все небуквенные символы внутри строки (только латинский алфавит).
+    :param st: входная строка
+    :return: выходная строка
+    """
     st = str(st)
     stt = "a"
     for i in st:

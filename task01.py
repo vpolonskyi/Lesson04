@@ -1,4 +1,11 @@
-def song(l: int = 3, lines: int = 3, ex: int = 0):
+def song(l: int = 3, lines: int = 3, ex: int = 0) -> str:
+    """
+    Генерирую песенку по заданным параметрам
+    :param l: количество слов в строке
+    :param lines: количество строк
+    :param ex: чем закончить песенку (./!)
+    :return: результат в str
+    """
     assert l >= 1 and lines >= 1 and 0 <= ex <= 1
     lin = 'la'
     for i in range(1, l * lines):
